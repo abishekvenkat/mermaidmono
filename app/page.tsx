@@ -313,7 +313,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="mt-16 text-center">
           <a
-            href="https://github.com/yourusername/mermaidmono"
+            href="https://github.com/abishekvenkat/mermaidmono"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm hover:underline"
