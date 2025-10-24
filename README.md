@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MermaidMono
+
+A simple tool to visualize mermaid diagrams and export them as SVG or PNG files.
+
+## Features
+
+- Real-time mermaid diagram rendering
+- Export diagrams as SVG or PNG images
+- Clean black and white design
+- Monospace typography throughout
+- Paste from clipboard functionality
+- Error handling for invalid syntax
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter or paste your mermaid diagram code in the left panel
+2. See the live preview in the right panel
+3. Click "SVG" or "PNG" to export your diagram in your preferred format
+4. Use the "PASTE" button to quickly insert code from your clipboard
 
-## Learn More
+**Export Formats:**
+- **SVG** - Vector format with perfect quality and no text cutoff (recommended)
+- **PNG** - Raster format at 3x resolution for high quality
 
-To learn more about Next.js, take a look at the following resources:
+## Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) - React framework
+- [Mermaid](https://mermaid.js.org/) - Diagram and chart tool
+- [html-to-image](https://github.com/bubkoo/html-to-image) - PNG export functionality
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Example Mermaid Code
 
-## Deploy on Vercel
+```mermaid
+graph TD
+    A[Start] --> B{Is it?}
+    B -->|Yes| C[OK]
+    B -->|No| D[End]
+    C --> D
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
